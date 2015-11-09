@@ -8,12 +8,22 @@
         <!--<a href="about.html"><span>关于我</span><span class="en">About</span></a>-->
         <!--<a href="gustbook.html"><span>留言版</span><span class="en">Gustbook</span></a>-->
 
-        {dede:channel type='top' row='4' }
-        <a href="[field:typelink/]"><span>[field:typename/]</span>
-            <span>
-　　               [field:content/]
-            </span>
+        <!--{dede:channel type='top' row='4' }-->
+        <!--[field:typename/]-->
+        <!--<a href="[field:typelink/]"><span>[field:typename/]</span>-->
+        <!--<span>-->
+        <!--　　               [field:hoverinfo/]-->
+        <!--</span>-->
+        <!--</a>-->
+        <!--{/dede:channel}-->
+        {dede:channelartlist row=6}
+
+        <a href='{dede:field name=' typeurl'/}'><span>{dede:field name='typename'/}</span>
+
+        <span>{dede:field name='content'/}</span>
         </a>
-        {/dede:channel}
+
+
+        {/dede:channelartlist}
     </nav>
 </header>
