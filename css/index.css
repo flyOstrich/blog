@@ -99,7 +99,7 @@ h2.title_tj { font: 18px "΢���ź�", Arial, Helvetica, sans-serif; color
 h2.title_tj span { color: #FE5187 }
 h2.title_tj p { background: #fff; width: 90px }
 /*wz*/
-.bloglist { width: 740px; overflow: hidden; background: url(../images/r_line.jpg) repeat-y right; }
+.bloglist { width: 740px; overflow: hidden;}
 .bloglist .wz{width:740px;bodrder:1px solid red;}
 .wz h3 { margin: 8px 0px 4px 2px; color:#D6533A;font-size: 14px}
 .wz figure { float: left; width: 183px; }
@@ -131,4 +131,18 @@ padding-left: 15px; background: url(../images/li.jpg) no-repeat left center;bord
 .paih li { line-height: 30px; height: 30px; overflow: hidden; padding-left: 24px; border-bottom:1px dashed #CCC;}
 .website { margin: 10px 0; background: #F3F3F3; border-radius: 50%; text-align: center; }
 .website li { line-height: 26px; text-shadow: #fff 1px 1px 1px; height: 26px; }
+
+.dede_pages{}
+.dede_pages ul{float:left;padding:12px 0px 12px 16px;}
+.dede_pages ul li{float:left;font-family:Tahoma;font-size:16px;height:20px;line-height:20px;margin-right:6px;
+ border:1px solid #dcf;border-radius:4px;color:#f0c;font-weight:500;text-align:center;}
+.dede_pages ul li a{float:left;padding:2px 4px 2px;height:16px;line-height:16px;color:#d7594c;
+ display:block;text-align:center;font-weight:500;}
+.dede_pages ul li a:hover{color:#f0c;text-decoration:none;padding:2px 4px 0px;}
+.dede_pages ul li.thisclass,
+.dede_pages ul li.thisclass a,.pagebox ul li.thisclass a:hover{background-color:#F8F8F8;
+ font-weight:bold;padding:2px 4px 2px;}
+.dede_pages .pageinfo{line-height:20px;height:20px;font-size:16px;padding:12px 10px 12px 16px;color:#999;}
+.dede_pages .pageinfo strong{color:#555;font-weight:normal;margin:0px 2px;}
+
 

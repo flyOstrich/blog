@@ -1,0 +1,30 @@
+.article-title {
+    margin: 15px;
+    font-size: 25px;
+    text-align: center;
+    color: #0088DB;
+    font-family:"Microsoft YaHei";
+}
+.article-sub-info {
+    height: 40px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    border-top:1px dashed black;
+    border-bottom: 1px dashed black;
+    margin: 5px 0;
+}
+.article-sub-info span {
+    text-align: center;
+    color: #DD3322;
+    font-size: 16px;
+    flex: 1;
+}
+.article-body {
+    color: #1A1919;
+    line-height: 21px;
+    font-size: 14px;
+    font-family:"Microsoft YaHei";
+
+}
