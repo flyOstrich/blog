@@ -28,3 +28,11 @@
     font-family:"Microsoft YaHei";
 
 }
+.nextinfo {
+    font-size: 16px;
+    margin-top: 15px;
+
+}
+.nextinfo a {
+    color:#0088DB;
+}
