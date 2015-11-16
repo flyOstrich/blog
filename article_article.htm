@@ -16,10 +16,11 @@
 <body>
 {dede:include filename='header.htm'/}
 <article class="blogs">
-    <h1 class="t_nav"><span>可以简单理解为提升网站自然排名、改进用户体验、提高转化率的网站优化行为</span>
+    <h1 class="t_nav">
+        <!--<span>可以简单理解为提升网站自然排名、改进用户体验、提高转化率的网站优化行为</span>-->
         {dede:field name='position' runphp='yes'}
-        $a=mb_strlen(@me);//计算字符串的长度
-        @me=cn_substr(@me,$a,0);//截取字符
+        <!--$a=mb_strlen(@me);//计算字符串的长度-->
+        <!--@me=cn_substr(@me,$a,0);//截取字符-->
         {/dede:field}
     </h1>
 

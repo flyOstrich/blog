@@ -14,9 +14,10 @@
 .bloglist .thumbnail_block h1 {
     width: 100%;
     font-size: 15px;
-    color: black;
+    color: #37ccca;
     font-weight: bold;
     margin-top: 8px;
+    text-align: center;
 }
 
 .bloglist .thumbnail_block h2 {
@@ -27,4 +28,5 @@
     color: #b4bbbf;
     font-size: 13px;
     margin-top: 5px;
+    text-align: center;
 }
