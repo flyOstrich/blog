@@ -464,15 +464,15 @@ h2.title_tj p {
     padding: 4px;
     border: #f4f2f2 1px solid;
     width: 175px;
-    height: 125px;
+    height: 135px;
 }
 
 .wz ul {
     float: left;
     width: 520px;
-    min-height: 160px;
+    min-height: 140px;
     position: relative;
-    margin: 10px 0px 0 2px;
+    margin: 10px 0px 0 15px;
     line-height: 20px;
 }
 
