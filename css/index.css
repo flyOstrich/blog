@@ -469,11 +469,11 @@ h2.title_tj p {
 
 .wz ul {
     float: left;
-    width: 520px;
+    width: 510px;
     min-height: 140px;
     position: relative;
-    margin: 10px 0px 0 15px;
-    line-height: 20px;
+    margin: 5px 0px 0 10px;
+    line-height: 25px;
 }
 
 .dateview {
