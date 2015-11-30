@@ -14,97 +14,99 @@
     <![endif]-->
 </head>
 <body>
-{dede:include filename='header.htm'/}
-<article class="blogs">
-    <h1 class="t_nav">
-        <!--<span>可以简单理解为提升网站自然排名、改进用户体验、提高转化率的网站优化行为</span>-->
-        {dede:field name='position' runphp='yes'}
-        <!--$a=mb_strlen(@me);//计算字符串的长度-->
-        <!--@me=cn_substr(@me,$a,0);//截取字符-->
-        {/dede:field}
-    </h1>
+<div class="container">
+    {dede:include filename='header.htm'/}
+    <article class="blogs">
+        <h1 class="t_nav">
+            <!--<span>可以简单理解为提升网站自然排名、改进用户体验、提高转化率的网站优化行为</span>-->
+            {dede:field name='position' runphp='yes'}
+            <!--$a=mb_strlen(@me);//计算字符串的长度-->
+            <!--@me=cn_substr(@me,$a,0);//截取字符-->
+            {/dede:field}
+        </h1>
 
-    <div class="bloglist left">
-        <h1 class="article-title">{dede:field.title/}</h1>
+        <div class="bloglist left">
+            <h1 class="article-title">{dede:field.title/}</h1>
 
-        <div class="article-sub-info">
-            <span>编辑日期:{dede:field.pubdate function=MyDate('y-m-d',@me)/}</span><span>作者:{dede:field.writer/}</span><span>点击量:{dede:field.click/}</span>
+            <div class="article-sub-info">
+                <span>编辑日期:{dede:field.pubdate function=MyDate('y-m-d',@me)/}</span><span>作者:{dede:field.writer/}</span><span>点击量:{dede:field.click/}</span>
+            </div>
+            <div class="article-body">
+                {dede:field.body/}
+            </div>
+
+            <div class="nextinfo">
+                <p>{dede:prenext get='pre'/}</p>
+
+                <p>{dede:prenext get='next'/}</p>
+            </div>
+
+            <!-- 多说评论框 start -->
+            <div class="ds-thread" data-thread-key="{dede:field.id/}" data-title="{dede:field.title/}"
+                 data-url="{dede:field.arcurl/}"></div>
+            <!-- 多说评论框 end -->
+            <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+            <script type="text/javascript">
+                var duoshuoQuery = {short_name: "pjlearn"};
+                (function () {
+                    var ds = document.createElement('script');
+                    ds.type = 'text/javascript';
+                    ds.async = true;
+                    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                    ds.charset = 'UTF-8';
+                    (document.getElementsByTagName('head')[0]
+                    || document.getElementsByTagName('body')[0]).appendChild(ds);
+                })();
+            </script>
+            <!-- 多说公共JS代码 end -->
+
         </div>
-        <div class="article-body">
-            {dede:field.body/}
-        </div>
 
-        <div class="nextinfo">
-            <p>{dede:prenext get='pre'/}</p>
-
-            <p>{dede:prenext get='next'/}</p>
-        </div>
-
-        <!-- 多说评论框 start -->
-        <div class="ds-thread" data-thread-key="{dede:field.id/}" data-title="{dede:field.title/}"
-             data-url="{dede:field.arcurl/}"></div>
-        <!-- 多说评论框 end -->
-        <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-        <script type="text/javascript">
-            var duoshuoQuery = {short_name: "pjlearn"};
-            (function () {
-                var ds = document.createElement('script');
-                ds.type = 'text/javascript';
-                ds.async = true;
-                ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-                ds.charset = 'UTF-8';
-                (document.getElementsByTagName('head')[0]
-                || document.getElementsByTagName('body')[0]).appendChild(ds);
-            })();
-        </script>
-        <!-- 多说公共JS代码 end -->
-
-    </div>
-
-    <!--right-->
-    <aside class="right">
-        <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
-            <a class="bds_tsina"></a>
-            <a class="bds_qzone"></a>
-            <a class="bds_tqq"></a>
-            <a class="bds_renren"></a>
-            <span class="bds_more"></span>
-            <a class="shareCount"></a>
-        </div>
-        <!--<div class="rnav">-->
+        <!--right-->
+        <aside class="right">
+            <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+                <a class="bds_tsina"></a>
+                <a class="bds_qzone"></a>
+                <a class="bds_tqq"></a>
+                <a class="bds_renren"></a>
+                <span class="bds_more"></span>
+                <a class="shareCount"></a>
+            </div>
+            <!--<div class="rnav">-->
             <!--<ul>-->
-                <!--<li class="rnav1"><a href="#">SEO基础入门</a></li>-->
-                <!--<li class="rnav2"><a href="#">SEO进阶优化</a></li>-->
-                <!--<li class="rnav3"><a href="#">SEO实战案例</a></li>-->
-                <!--<li class="rnav4"><a href="#">SEO心得笔记</a></li>-->
+            <!--<li class="rnav1"><a href="#">SEO基础入门</a></li>-->
+            <!--<li class="rnav2"><a href="#">SEO进阶优化</a></li>-->
+            <!--<li class="rnav3"><a href="#">SEO实战案例</a></li>-->
+            <!--<li class="rnav4"><a href="#">SEO心得笔记</a></li>-->
             <!--</ul>-->
-        <!--</div>-->
+            <!--</div>-->
 
-        <!--<div class="news">-->
+            <!--<div class="news">-->
             <!--<h3 class="ph">-->
-                <!--<p>精心<span>推荐</span></p>-->
+            <!--<p>精心<span>推荐</span></p>-->
             <!--</h3>-->
             <!--<ul class="paih">-->
-                <!--<li><a href="/" title="如何建立个人博客" target="_blank">如何建立个人博客</a></li>-->
-                <!--<li><a href="/" title="一个网站的开发流程" target="_blank">一个网站的开发流程</a></li>-->
-                <!--<li><a href="/" title="关键词排名的三个时期" target="_blank">关键词排名的三个时期</a></li>-->
-                <!--<li><a href="/" title="做网站到底需要什么?" target="_blank">做网站到底需要什么?</a></li>-->
-                <!--<li><a href="/" title="关于响应式布局" target="_blank">关于响应式布局</a></li>-->
+            <!--<li><a href="/" title="如何建立个人博客" target="_blank">如何建立个人博客</a></li>-->
+            <!--<li><a href="/" title="一个网站的开发流程" target="_blank">一个网站的开发流程</a></li>-->
+            <!--<li><a href="/" title="关键词排名的三个时期" target="_blank">关键词排名的三个时期</a></li>-->
+            <!--<li><a href="/" title="做网站到底需要什么?" target="_blank">做网站到底需要什么?</a></li>-->
+            <!--<li><a href="/" title="关于响应式布局" target="_blank">关于响应式布局</a></li>-->
             <!--</ul>-->
             <!--<h3>-->
-                <!--<p>用户<span>关注</span></p>-->
+            <!--<p>用户<span>关注</span></p>-->
             <!--</h3>-->
             <!--<ul class="rank">-->
-                <!--<li><a href="/" title="如何建立个人博客" target="_blank">如何建立个人博客</a></li>-->
-                <!--<li><a href="/" title="html5标签" target="_blank">html5标签</a></li>-->
-                <!--<li><a href="/" title="一个网站的开发流程" target="_blank">一个网站的开发流程</a></li>-->
-                <!--<li><a href="/" title="做网站到底需要什么?" target="_blank">做网站到底需要什么?</a></li>-->
-                <!--<li><a href="/" title="企业做网站具体流程步骤" target="_blank">企业做网站具体流程步骤</a></li>-->
+            <!--<li><a href="/" title="如何建立个人博客" target="_blank">如何建立个人博客</a></li>-->
+            <!--<li><a href="/" title="html5标签" target="_blank">html5标签</a></li>-->
+            <!--<li><a href="/" title="一个网站的开发流程" target="_blank">一个网站的开发流程</a></li>-->
+            <!--<li><a href="/" title="做网站到底需要什么?" target="_blank">做网站到底需要什么?</a></li>-->
+            <!--<li><a href="/" title="企业做网站具体流程步骤" target="_blank">企业做网站具体流程步骤</a></li>-->
             <!--</ul>-->
-        <!--</div>-->
-    </aside>
-</article>
-{dede:include filename='footer.htm'/}
+            <!--</div>-->
+        </aside>
+    </article>
+    {dede:include filename='footer.htm'/}
+</div>
 <script src="{dede:global.cfg_templets_skin/}/js/scripts/shCore.js"></script>
 <script src="{dede:global.cfg_templets_skin/}/js/scripts/shBrushJScript.js"></script>
 <script type="text/javascript">SyntaxHighlighter.all();</script>

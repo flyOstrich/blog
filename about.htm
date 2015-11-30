@@ -15,56 +15,62 @@
 </head>
 <body>
 {dede:include filename='header.htm'/}
-<article class="aboutcon">
-    <h1 class="t_nav">
-        <!--<span>像“草根”一样，紧贴着地面，低调的存在，冬去春来，枯荣无恙。</span>-->
-        {dede:field name='position' runphp='yes'}
-       // $a=mb_strlen(@me);//计算字符串的长度
-       // @me=cn_substr(@me,$a,0);//截取字符
-        {/dede:field}
-    </h1>
+<div class="container">
+    <article class="aboutcon">
+        <h1 class="t_nav">
+            <!--<span>像“草根”一样，紧贴着地面，低调的存在，冬去春来，枯荣无恙。</span>-->
+            {dede:field name='position' runphp='yes'}
+            // $a=mb_strlen(@me);//计算字符串的长度
+            // @me=cn_substr(@me,$a,0);//截取字符
+            {/dede:field}
+        </h1>
 
-    <div class="about left">
-        <h2>About me</h2>
+        <div class="about left">
+            <h2>About me</h2>
 
-        <div id="me_text">
-            <p>俗话说,不积跬步无以至千里,不积小流无以成江海!学习是一个不断积累的过程。</p>
-            <p>
-               对于才踏入IT,踏入前端工程师这个行列才一年多得我，至今还只是算一个小白。</p>
-            <p>
-               其实创建这个博客的目的很简单，就是想把自己平常学习中，工作中遇到的问题和网友们一起分享，
-               我深信在这一行，没有人关着门就能成为大师的，学习是一个不断分享，不断积累的过程，目前我的博客还处于初级阶段，内容肯定还不是很完善，但随后的日子里，我相信，会有更多好的技术文章与大家分享，
-               也希望得到更多朋友的支持！
-            </p>
-            <p>
+            <div id="me_text">
+                <p>俗话说,不积跬步无以至千里,不积小流无以成江海!学习是一个不断积累的过程。</p>
 
-                最后我要感谢那些在成长路上给予过我帮助的朋友们，有了你们，我才能更加进步！
+                <p>
+                    对于才踏入IT,踏入前端工程师这个行列才一年多得我，至今还只是算一个小白。</p>
+
+                <p>
+                    其实创建这个博客的目的很简单，就是想把自己平常学习中，工作中遇到的问题和网友们一起分享，
+                    我深信在这一行，没有人关着门就能成为大师的，学习是一个不断分享，不断积累的过程，目前我的博客还处于初级阶段，内容肯定还不是很完善，但随后的日子里，我相信，会有更多好的技术文章与大家分享，
+                    也希望得到更多朋友的支持！
+                </p>
+
+                <p>
+
+                    最后我要感谢那些在成长路上给予过我帮助的朋友们，有了你们，我才能更加进步！
 
 
-            </p>
-            <p>    ----By:<span style="color:#f00">彭建伦</span></p>
+                </p>
+
+                <p> ----By:<span style="color:#f00">彭建伦</span></p>
+            </div>
+
         </div>
+        <aside class="right">
+            <div class="about_c">
 
-    </div>
-    <aside class="right">
-        <div class="about_c">
+                <p>姓名：<a href="www.pjlearn.org" target="_blank">彭建伦</a></p>
 
-            <p>姓名：<a href="www.pjlearn.org" target="_blank">彭建伦</a></p>
+                <p>星座：狮子座</p>
 
-            <p>星座：狮子座</p>
+                <p>现居：四川省-成都市</p>
 
-            <p>现居：四川省-成都市</p>
+                <p>博客：<a href="www.pjlearn.org" target="_blank">www.pjlearn.org</a></p>
 
-            <p>博客：<a href="www.pjlearn.org" target="_blank">www.pjlearn.org</a></p>
+                <p>喜欢的动漫：《妖精的尾巴》..</p>
 
-            <p>喜欢的动漫：《妖精的尾巴》..</p>
+                <p>喜欢的音乐：《美若黎明》..</p>
 
-            <p>喜欢的音乐：《美若黎明》..</p>
-
-            <p>QQ号：1145025490</p>
-        </div>
-    </aside>
-</article>
-{dede:include filename='footer.htm'/}
+                <p>QQ号：1145025490</p>
+            </div>
+        </aside>
+    </article>
+    {dede:include filename='footer.htm'/}
+</div>
 </body>
 </html>
