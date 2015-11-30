@@ -5,125 +5,133 @@
     <title>{dede:global.cfg_webname/}</title>
     <meta name="keywords" content="彭建伦，彭建伦个人博客，前端技术"/>
     <meta name="description" content="angularjs,grunt,前端技术，javascript"/>
+    <link href="{dede:global.cfg_templets_skin/}/css/focus.css" rel="stylesheet">
     <link href="{dede:global.cfg_templets_skin/}/css/index.css" rel="stylesheet">
     <!--[if lt IE 9]>
-    <script src="js/html5.js"></script>
+    <script src="{dede:global.cfg_templets_skin/}/js/html5.js"></script>
     <![endif]-->
 </head>
 <body>
 {dede:include filename='header.htm'/}
+<div class="container">
+    <!--end header-->
+    <!--<div class="banner">-->
+    <!--<section class="box">-->
+    <!--<ul class="texts">-->
+    <!--<p class="p1">无论你在什么时候开始，</p>-->
 
-<!--end header-->
-<div class="banner">
-    <section class="box">
-        <ul class="texts">
-            <p class="p1">无论你在什么时候开始，</p>
+    <!--<p class="p2">重要的是开始之后就不要停止......</p>-->
 
-            <p class="p2">重要的是开始之后就不要停止......</p>
-
-        </ul>
-    </section>
-</div>
-<!--end banner-->
-<article>
-    <h2 class="title_tj">
-        <p>最新<span>推荐</span></p>
-    </h2>
-    <div class="bloglist left">
-
-        {dede:arclist row='10' typeid='top'}
-        <!--<li><a href="[field:arcurl/]">[field:title/]</a></li>-->
-
-        <!--wz-->
-        <div class="wz">
-            <h3>[field:title/]</h3>
-
-            <p class="dateview">
-                <span>[field:pubdate function=MyDate('y-m-d',@me)/]</span>
-                <span>作者：[field:writer/]</span>
-                <span>分类：[<a href="[field:typeurl/]"> [field:typename/]</a>]</span>
-            </p>
-            <figure><img src="[field:litpic/]"/></figure>
+    <!--</ul>-->
+    <!--</section>-->
+    <!--</div>-->
+    <div class="focus banner" id="focus">
+        <div class="left">
             <ul>
-                <p>
-                    [field:description /]...
-                </p>
-                <a title="阅读全文" href="[field:arcurl/]" target="_blank" class="readmore">阅读全文>></a>
+                <li class="active" style="opacity:1; filter:alpha(opacity=100);"><p>图一</p><img
+                        src="{dede:global.cfg_templets_skin/}/images/1.jpg"/></li>
+                <li><p>图二</p><img src="{dede:global.cfg_templets_skin/}/images/2.jpg"/></li>
+                <li><p>图三</p><img src="{dede:global.cfg_templets_skin/}/images/3.jpg"/></li>
+                <li><p>图四</p><img src="{dede:global.cfg_templets_skin/}/images/4.jpg"/></li>
             </ul>
-            <div class="clear"></div>
         </div>
-        {/dede:arclist}
-        <!--end-->
+        <div class="right">
+            <ul>
+                <li class="active"><i class="i1"></i>图一</li>
+                <li><i class="i2"></i>图二</li>
+                <li><i class="i3"></i>图三</li>
+                <li><i class="i4"></i>图四</li>
+            </ul>
+        </div>
     </div>
-    <!--right-->
-    <aside class="right">
-        <div class="my">
-            <h2>关于<span>博主</span></h2>
-            <img src="{dede:global.cfg_templets_skin/}/images/my.jpg" width="200" height="200" alt="博主">
-            <ul>
-                <li>姓名：彭建伦</li>
-                <li>职业：前端工程师、菜鸟站长</li>
-                <li>简介：一个热爱web前端技术、喜欢各种折腾的90后小伙。</li>
-                <li></li>
-            </ul>
-        </div>
-        <div class="bdsharebuttonbox">
-            <a href="#" class="bds_more" data-cmd="more"></a>
-            <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-            <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-            <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
-            <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
-            <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-        </div>
-        <div class="news">
-            <!--<h3 class="ph">-->
-            <!--<p>点击<span>排行</span></p>-->
-            <!--</h3>-->
-            <!--<ul class="paih">-->
-            <!--<li><a href="/" title="如何建立个人博客" target="_blank">如何建立个人博客</a></li>-->
-            <!--<li><a href="/" title="html5标签" target="_blank">html5标签</a></li>-->
-            <!--<li><a href="/" title="一个网站的开发流程" target="_blank">一个网站的开发流程</a></li>-->
-            <!--<li><a href="/" title="做网站到底需要什么?" target="_blank">做网站到底需要什么?</a></li>-->
-            <!--<li><a href="/" title="企业做网站具体流程步骤" target="_blank">企业做网站具体流程步骤</a></li>-->
-            <!--</ul>-->
-            <!--<h3>-->
-            <!--<p>用户<span>关注</span></p>-->
-            <!--</h3>-->
-            <!--<ul class="rank">-->
-            <!--<li><a href="/" title="如何建立个人博客" target="_blank">如何建立个人博客</a></li>-->
-            <!--<li><a href="/" title="一个网站的开发流程" target="_blank">一个网站的开发流程</a></li>-->
-            <!--<li><a href="/" title="关键词排名的三个时期" target="_blank">关键词排名的三个时期</a></li>-->
-            <!--<li><a href="/" title="做网站到底需要什么?" target="_blank">做网站到底需要什么?</a></li>-->
-            <!--<li><a href="/" title="关于响应式布局" target="_blank">关于响应式布局</a></li>-->
-            <!--<li><a href="/" title="html5标签" target="_blank">html5标签</a></li>-->
-            <!--</ul>-->
+    <!--end banner-->
+    <article>
+        <h2 class="title_tj">
+            <p>最新<span>推荐</span></p>
+        </h2>
+        <div class="bloglist left">
 
-            <h3 class="links">
-                <p>友情<span>链接</span></p>
-            </h3>
-            <ul class="website">
-                <li><a href="#">个人博客</a></li>
-                <li><a href="http://wwww.pjlearn.com">彭建伦博客</a></li>
-            </ul>
+            {dede:arclist row='10' typeid='top'}
+            <!--<li><a href="[field:arcurl/]">[field:title/]</a></li>-->
+
+            <!--wz-->
+            <div class="wz">
+                <h3>[field:title/]</h3>
+
+                <p class="dateview">
+                    <span>[field:pubdate function=MyDate('y-m-d',@me)/]</span>
+                    <span>作者：[field:writer/]</span>
+                    <span>分类：[<a href="[field:typeurl/]"> [field:typename/]</a>]</span>
+                </p>
+                <figure><img src="[field:litpic/]"/></figure>
+                <ul>
+                    <p>
+                        [field:description /]...
+                    </p>
+                    <a title="阅读全文" href="[field:arcurl/]" target="_blank" class="readmore">阅读全文>></a>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            {/dede:arclist}
+            <!--end-->
         </div>
-    </aside>
-</article>
-{dede:include filename='footer.htm'/}
-<!--百度分享-->
-<script>window._bd_share_config = {
-    "common": {
-        "bdSnsKey": {},
-        "bdText": "",
-        "bdMini": "2",
-        "bdMiniList": false,
-        "bdPic": "",
-        "bdStyle": "1",
-        "bdSize": "32"
-    },
-    "share": {},
-    "image": {"viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16"},
-    "selectShare": {"bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"]}
-};
-with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+        <!--right-->
+        <aside class="right">
+            <div class="my">
+                <h2>关于<span>博主</span></h2>
+                <img src="{dede:global.cfg_templets_skin/}/images/my.jpg" width="200" height="200" alt="博主">
+                <ul>
+                    <li>姓名：彭建伦</li>
+                    <li>职业：前端工程师、菜鸟站长</li>
+                    <li>简介：一个热爱web前端技术、喜欢各种折腾的90后小伙。</li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="bdsharebuttonbox">
+                <a href="#" class="bds_more" data-cmd="more"></a>
+                <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+                <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+            </div>
+            <div class="news">
+                <!--<h3 class="ph">-->
+                <!--<p>点击<span>排行</span></p>-->
+                <!--</h3>-->
+                <!--<ul class="paih">-->
+                <!--<li><a href="/" title="如何建立个人博客" target="_blank">如何建立个人博客</a></li>-->
+                <!--<li><a href="/" title="html5标签" target="_blank">html5标签</a></li>-->
+                <!--<li><a href="/" title="一个网站的开发流程" target="_blank">一个网站的开发流程</a></li>-->
+                <!--<li><a href="/" title="做网站到底需要什么?" target="_blank">做网站到底需要什么?</a></li>-->
+                <!--<li><a href="/" title="企业做网站具体流程步骤" target="_blank">企业做网站具体流程步骤</a></li>-->
+                <!--</ul>-->
+                <!--<h3>-->
+                <!--<p>用户<span>关注</span></p>-->
+                <!--</h3>-->
+                <!--<ul class="rank">-->
+                <!--<li><a href="/" title="如何建立个人博客" target="_blank">如何建立个人博客</a></li>-->
+                <!--<li><a href="/" title="一个网站的开发流程" target="_blank">一个网站的开发流程</a></li>-->
+                <!--<li><a href="/" title="关键词排名的三个时期" target="_blank">关键词排名的三个时期</a></li>-->
+                <!--<li><a href="/" title="做网站到底需要什么?" target="_blank">做网站到底需要什么?</a></li>-->
+                <!--<li><a href="/" title="关于响应式布局" target="_blank">关于响应式布局</a></li>-->
+                <!--<li><a href="/" title="html5标签" target="_blank">html5标签</a></li>-->
+                <!--</ul>-->
+
+                <h3 class="links">
+                    <p>友情<span>链接</span></p>
+                </h3>
+                <ul class="website">
+                    <li><a href="#">个人博客</a></li>
+                    <li><a href="http://wwww.pjlearn.com">彭建伦博客</a></li>
+                </ul>
+            </div>
+        </aside>
+    </article>
+    {dede:include filename='footer.htm'/}
+</div>
+<!--百度jq CDN-->
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/focus.js"></script>
 </body>
 </html>
