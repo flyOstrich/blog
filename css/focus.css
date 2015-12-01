@@ -1,25 +1,152 @@
-@charset "utf-8";
-/* CSS Document */
-*{margin:0;padding:0;list-style-type:none;}
-a,img{border:0;}
-body{background:#fff; color:#333;font-weight:500; font-family:'Microsoft Yahei';}
+*{margin:0;padding:0;}
+#container {}
+#footer {position: relative; height: 70px;clear:both;}
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.clearfix {display: inline-block;}
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+body{background:#2a2b2d;font:13px/1.3 'Microsoft Yahei','宋体';color:#999;}
+#page,#footer_inner{margin:0 auto;width:960px;}
+h1#logo{overflow:hidden;height:93px;padding: 25px 0;}
+h1#logo a{display:block;height:93px;}
+#container{margin:0 auto;}
+#container h2 {font-weight:normal;line-height:28px;}
+#container p{padding:10px 0;}
+.credit{text-align:center;padding: 20px 0 100px;font-size:10px;}
+a, a:visited {text-decoration:none;outline:none;color:#97cae6;}
+a:hover{text-decoration:underline;}
+#footer{background-color:#212121;width:100%;}
+#footer h2{font-size:18px;font-weight:normal;height:70px;line-height:70px;font-family:"Microsoft Yahei";color:#eee;}
+#footer_inner{position:relative;}
+#footer a.tzine,a.tzine:visited{color:#FCFCFC;font-size:12px;line-height:70px;position:absolute;top:0;right:0;width:90px;}
 
-
-.focus{height:415px;width:980px;margin:40px auto 0 auto;}
-.focus .left{float:left; width:680px; height:415px; position:relative;overflow:hidden;}
-.focus .left li{position:absolute; left:0; top:0; width:842px; height:415px; z-index:1; opacity:0; filter:alpha(opacity=0);}
-.focus .left li.active{z-index:2;}
-.focus .left li p{display:none;}
-
-.focus .right{float:right; width:282px;}
-.focus .right li{height:88px; overflow:hidden; padding-left:10px;background-image:url(../images/btns.png);background-position:-120px 0; color:#33cccc; font-size:24px; line-height:88px; margin-bottom:21px;cursor: pointer;}
-.focus .right li:hover,.focus .right li.active{color:#fff;background-position:-120px -120px; }
-.focus .right li i{background-image:url(../images/btns.png); background-repeat:no-repeat; width:60px; height:60px; float:left; margin:15px 19px 0px 0;}
-.focus .right li i.i1{background-position:0 0;}
-.focus .right li i.i2{background-position:0 -60px;}
-.focus .right li i.i3{background-position:0 -120px;}
-.focus .right li i.i4{background-position:0 -180px;}
-.focus .right li:hover i.i1,.focus .right li.active i.i1{background-position:-60px 0;}
-.focus .right li:hover i.i2,.focus .right li.active i.i2{background-position:-60px -60px;}
-.focus .right li:hover i.i3,.focus .right li.active i.i3{background-position:-60px -120px;}
-.focus .right li:hover i.i4,.focus .right li.active i.i4{background-position:-60px -180px;}
+/*-核心代码-*/
+/* demo style */
+.focusWrap{
+    width:1030px;
+    height:255px;
+    margin:10px auto;
+    background:url(focusbg.gif) left top repeat;
+}
+.focusCon{
+    float:left;
+    width:1040px;
+}
+.focusR{
+    display:inline;
+    float:right;
+    width:236px;
+    height:100%;
+    margin-right:10px;
+}
+.kugoo{
+    width:100%;
+    height:165px;
+    background:url(kugou.png) left top no-repeat;
+}
+.kugoo a{
+    display:inline;
+    float:left;
+    width:202px;
+    height:70px;
+    margin:92px 0px 0px 10px;
+    overflow:hidden;
+    line-height:200px;
+    text-decoration:none;
+}
+.ulHot{
+    float:left;
+    width:100%;
+    height:115px;
+    margin-top:10px;
+    background:url(kugou.png) right bottom no-repeat;
+}
+.ulHot li{
+    display:inline;
+    float:left;
+    width:100%;
+    height:20px;
+    line-height:20px;
+}
+.ulHot li a{
+    float:left;
+    width:180px;
+    padding-left:25px;
+    background:url(arrow.gif) 16px center no-repeat;
+    text-decoration:none;
+    color:#fff;
+    font-size:12px;
+}
+.focusL{
+    position:relative;
+    float:left;
+    width:140px;
+    height:259px;
+    margin-top:12px;
+    background:url(line.png) left top repeat-y;
+}
+.ulFocus{
+    position:relative;
+    width:100%;
+    height:100%;
+    left:0px;
+    top:0px;
+    z-index:2;
+}
+.ulFocus li{
+    display:inline;
+    float:left;
+    width:120px;
+    height:38px;
+    margin:5px 10px 2px 10px;
+    color:#fff;
+    font-size:12px;
+    line-height:16px;
+}
+.ulFocus li span{
+    position:relative;
+    display:block;
+    width:100%;
+    height:32px;
+    padding-bottom:6px;
+    z-index:2;
+    cursor:pointer;
+}
+.focusM{
+    float:left;
+    width:884px;
+    height:243px;
+    margin-top:6px;
+    overflow:hidden;
+}
+.ulFCon{
+    float:left;
+    width:100%;
+}
+.ulFCon li{
+    float:left;
+    width:100%;
+    height:293px;
+    overflow:hidden;
+}
+.ulFCon li a{
+    display:block;
+    width:100%;
+    height:100%;
+    text-decoration:none;
+}
+.ulFCon li img{
+    height:243px;
+    border:none;
+}
+.back{
+    position:absolute;
+    width:166px;
+    height:47px;
+    background:url(titlebg.png) left top no-repeat;
+    _background:none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src="./images/titlebg.png");
+    top:0px;
+    left:0px;
+    z-index:1;
+}
