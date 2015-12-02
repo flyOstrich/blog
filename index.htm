@@ -7,6 +7,9 @@
     <meta name="description" content="angularjs,grunt,前端技术，javascript"/>
     <link href="{dede:global.cfg_templets_skin/}/css/focus.css" rel="stylesheet">
     <link href="{dede:global.cfg_templets_skin/}/css/index.css" rel="stylesheet">
+    <link href="{dede:global.cfg_templets_skin/}/css/unslider.css" rel="stylesheet">
+    <link href="{dede:global.cfg_templets_skin/}/css/unslider-dots.css" rel="stylesheet">
+
     <!--[if lt IE 9]>
     <script src="{dede:global.cfg_templets_skin/}/js/html5.js"></script>
     <![endif]-->
@@ -14,103 +17,25 @@
 <body>
 {dede:include filename='header.htm'/}
 <div class="container">
-    <!--end header-->
-    <!--<div class="banner">-->
-    <!--<section class="box">-->
-    <!--<ul class="texts">-->
-    <!--<p class="p1">无论你在什么时候开始，</p>-->
 
-    <!--<p class="p2">重要的是开始之后就不要停止......</p>-->
-
-    <!--</ul>-->
-    <!--</section>-->
-    <!--</div>-->
-    <!--<div class="focus banner" id="focus">-->
-        <!--<div class="left">-->
-            <!--<ul>-->
-                <!--<li class="active" style="opacity:1; filter:alpha(opacity=100);"><p>图一</p><img-->
-                        <!--src="{dede:global.cfg_templets_skin/}/images/1.jpg"/></li>-->
-                <!--<li><p>图二</p><img src="{dede:global.cfg_templets_skin/}/images/2.jpg"/></li>-->
-                <!--<li><p>图三</p><img src="{dede:global.cfg_templets_skin/}/images/3.jpg"/></li>-->
-                <!--<li><p>图四</p><img src="{dede:global.cfg_templets_skin/}/images/4.jpg"/></li>-->
-            <!--</ul>-->
-        <!--</div>-->
-        <!--<div class="right">-->
-            <!--<ul>-->
-                <!--<li class="active"><i class="i1"></i>图一</li>-->
-                <!--<li><i class="i2"></i>图二</li>-->
-                <!--<li><i class="i3"></i>图三</li>-->
-                <!--<li><i class="i4"></i>图四</li>-->
-            <!--</ul>-->
-        <!--</div>-->
-    <!--</div>-->
-    <div class="focusWrap">
-        <div class="focusCon" id="j_Focus">
-            <div class="focusL">
-                <ul class="ulFocus" id="j_FocusNav">
-                    <li rel="0">
-                        <span>酷狗7正式版发布<br/>音乐魔力全线绽放</span>
-                    </li>
-
-                    <li rel="1">
-                        <span>海量免费高清MV<br/>更清晰更流畅</span>
-                    </li>
-                    <li rel="2">
-                        <span>酷狗7:音乐魔方<br/>带给你全新播放体验</span>
-                    </li>
-                    <li rel="3">
-
-                        <span>个性化歌曲推荐<br/>酷狗猜你喜欢</span>
-                    </li>
-                    <li rel="4">
-                        <span>酷狗收音机<br/>重新认识电台魅力</span>
-                    </li>
-                    <li rel="5">
-                        <span>手机酷狗3.0<br/>无线音乐新序章</span>
-
-                    </li>
-                </ul>
-                <div class="back" id="j_FocusBack"></div>
-            </div>
-            <div class="focusM">
-                <ul class="ulFCon" id="j_FocusCon">
-                    <li>
-                        <a href="#">
-                        <img src="{dede:global.cfg_templets_skin/}/images/1.jpeg" alt="酷狗7正式版发布" />
-
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                        <img src="{dede:global.cfg_templets_skin/}/images/2.jpeg" alt="海量免费高清MV" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" >
-                        <img src="{dede:global.cfg_templets_skin/}/images/3.jpeg" alt="酷狗7:音乐魔方" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                        <img src="{dede:global.cfg_templets_skin/}/images/4.jpg" alt="个性化歌曲推荐" />
-                        </a>
-                    </li>
-                    <li>
-
-                        <a href="#" >
-                        <img src="{dede:global.cfg_templets_skin/}/images/5.jpg" alt="酷狗收音机" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                        <img src="images/6.jpg" alt="手机酷狗3.0" />
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-
+    <div class="my-slider" style="height: 280px;">
+        <ul>
+            <li style="background: url({dede:global.cfg_templets_skin/}/images/1.jpeg) no-repeat">
+                <span style="display: block;margin: 70px 0 0 100px;font-size: 25px;font-family: 'Microsoft Yahei';font-weight: bold;color:#BDB5BC;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;积少成多
+                     <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;争取每天进步一点!
+                </span>
+            </li>
+            <li style="background: url({dede:global.cfg_templets_skin/}/images/3.jpeg) no-repeat">
+                <span style="display: block;margin: 90px 0 0 100px;font-size: 25px;font-family: 'Microsoft Yahei';font-weight: bold;color:#5A3756;">
+                    <span>无论你在什么时候开始，</span>
+                       <br>
+                       <br>
+                       <span style="display: inline-block;margin-left: 70px;">重要的时不要停止......</span>
+                </span>
+            </li>
+        </ul>
     </div>
     <!--end banner-->
     <article>
@@ -200,13 +125,19 @@
 </div>
 <!--百度jq CDN-->
 
-<!--<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>-->
-<script src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/unslider-min.js"></script>
 
-<script src="{dede:global.cfg_templets_skin/}/js/jquery.focus.js"></script>
+
 <script>
-    $(document).ready(function(){
-        $("#j_Focus").Focus();
+    jQuery(document).ready(function ($) {
+        $('.my-slider').unslider({
+            autoplay: true,
+            animateHeight: false,
+            animation: 'vertical',
+            delay: 6000,
+            speed: 200
+        });
     });
 </script>
 </body>
