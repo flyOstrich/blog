@@ -23,15 +23,17 @@
 .article-body {
     color: #1A1919;
     line-height: 21px;
-    font-size: 14px;
+    font-size: 16px;
     font-family:"Microsoft YaHei";
 
 }
 .nextinfo {
     font-size: 16px;
     margin-top: 15px;
-
 }
 .nextinfo a {
     color:#0088DB;
+}
+.nextinfo p {
+    margin-top: 15px;
 }

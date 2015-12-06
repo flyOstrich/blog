@@ -8,7 +8,7 @@
     <link href="{dede:global.cfg_templets_skin/}/css/index.css" rel="stylesheet">
     <link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet">
     <link href="{dede:global.cfg_templets_skin/}/css/article.css" rel="stylesheet">
-    <link href="{dede:global.cfg_templets_skin/}/css/shCoreDefault.css" rel="stylesheet">
+    <link href="{dede:global.cfg_templets_skin/}/css/shCoreDjango.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="{dede:global.cfg_templets_skin/}/js/modernizr.js"></script>
     <![endif]-->
@@ -17,7 +17,7 @@
 <div class="container">
     {dede:include filename='header.htm'/}
     <article class="blogs">
-        <h1 class="t_nav">
+        <h1 class="t_nav" style="font-size: 20px;vertical-align:middle">
             <!--<span>可以简单理解为提升网站自然排名、改进用户体验、提高转化率的网站优化行为</span>-->
             {dede:field name='position' runphp='yes'}
             <!--$a=mb_strlen(@me);//计算字符串的长度-->
@@ -109,6 +109,7 @@
 </div>
 <script src="{dede:global.cfg_templets_skin/}/js/scripts/shCore.js"></script>
 <script src="{dede:global.cfg_templets_skin/}/js/scripts/shBrushJScript.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/scripts/shBrushXml.js"></script>
 <script type="text/javascript">SyntaxHighlighter.all();</script>
 
 

@@ -140,7 +140,7 @@ h1.t_nav a:first-of-type {
 }
 
 .rnav1 {
-    background: #4858AA;
+    background: #5578aa;
     border-radius: 3px;
 }
 
@@ -158,14 +158,18 @@ h1.t_nav a:first-of-type {
     background: #50A84D;
     border-radius: 3px;
 }
-
-aside .rnav ul li a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
+.rnav5 {
+    background: #2e8ea8;
+    border-radius: 3px;
 }
+
+.rnav6 {
+    background: #a75ea8;
+    border-radius: 3px;
+}
+
+
+
 
 #gustbook {
     width: 720px;

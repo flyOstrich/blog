@@ -18,24 +18,26 @@
         <h1 class="t_nav">
             <!--<span>可以简单理解为提升网站自然排名、改进用户体验、提高转化率的网站优化行为</span>-->
             {dede:field name='position' runphp='yes'}
-            <!--$a=mb_strlen(@me);//计算字符串的长度-->
-            <!--@me=cn_substr(@me,$a,0);//截取字符-->
+               $a=mb_strlen(@me);//计算字符串的长度
+               @me=substr(@me,-1,0);//截取字符
             {/dede:field}
         </h1>
 
         <div class="bloglist left">
             {dede:list pagesize='10' titlelen='450'}
             <div class="wz">
-                <h3>[field:title/]</h3>
-
+                <h3>
+                    <a href="[field:arcurl/]" > [field:title/]</a>
+                </h3>
                 <p class="dateview">
                     <span>[field:pubdate function=MyDate('y-m-d',@me)/]</span>
                     <span>作者：[field:writer/]</span>
                     <span>分类：[<a href="[field:typeurl/]">[field:typename/]</a>]</span>
                 </p>
-                <figure><img src="[field:litpic/]"/></figure>
+                <figure>
+                    <img src="[field:litpic/]"/></figure>
                 <ul>
-                    <p>
+                    <p style="font-size: 15px;">
                         [field:description/]...
                     </p>
                     <a title="阅读全文" href="[field:arcurl/]" target="_blank" class="readmore">阅读全文>></a>
@@ -58,7 +60,7 @@
             </div>
             <div class="rnav">
                 <ul>
-                    {dede:channelartlist typeid='1' row='8'}
+                    {dede:channelartlist typeid='1' row='5'}
                     <li class="rnav1"><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></li>
                     {/dede:channelartlist}
                 </ul>
@@ -102,6 +104,9 @@
     </article>
     {dede:include filename='footer.htm'/}
 </div>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/list-article.js"></script>
+
 <!-- Baidu Button BEGIN -->
 <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6574585"></script>
 <script type="text/javascript" id="bdshell_js"></script>

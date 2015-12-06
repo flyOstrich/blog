@@ -54,8 +54,13 @@ nav a {
     font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
 }
 
+
 nav a:hover {
-    text-decoration: none
+    text-decoration: none;
+    color: #ff59e7;
+}
+nav .active {
+    color: #ff59e7;
 }
 
 .topnav a {
@@ -467,10 +472,12 @@ h2.title_tj p {
     padding-bottom: 5px;
 }
 
-.wz h3 {
-    margin: 8px 0px 4px 2px;
+.wz h3 a{
+
+    display: inline-block;
+    margin: 15px 0 0  2px;
     color: #D6533A;
-    font-size: 14px
+    font-size: 18px
 }
 
 .wz figure {
