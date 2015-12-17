@@ -120,6 +120,7 @@ a:link, a:visited {
 
 .right {
     float: right;
+    margin-left: 18px;
 }
 
 .blank {
@@ -148,13 +149,14 @@ a:link, a:visited {
 
 /* ie */
 article {
-    width: 1000px;
-    margin: 20px auto;
-    overflow: hidden
+    width: 740px;
+    display: inline-block;
+    margin: 20px 0 0 18px;
+    overflow: hidden;
 }
 
 aside {
-    width: 250px;
+    width: 260px;
 }
 
 footer {
